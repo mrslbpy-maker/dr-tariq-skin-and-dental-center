@@ -1,0 +1,12 @@
+{
+  "name": "dr-tariq-skin-dental-platform",
+  "version": "1.0.0",
+  "description": "Ultra-premium clinical web platform for Dr. Tariq Skin & Dental Center Lahore",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["dermatology", "dental", "medical", "lahore", "healthcare"],
+  "author": "Dr. Tariq Skin & Dental Center",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Tariq Skin & Dental Center | Advanced Dermatology & Surgical Dentistry</title>
+  <meta name="description" content="Premier multi-specialty clinical center in Lahore for evidence-based dermatology, painless laser hair removal, cosmetic dentistry, and dental implants. Led by Prof. Dr. Tariq Rashid and expert specialists.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- TOP UTILITY BAR -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <div id="liveStatusBadge" class="live-status open">
+          <span class="status-dot"></span>
+          <span id="liveStatusText">Open Today • 12:00 PM – 8:00 PM</span>
+        </div>
+        <span style="color: var(--text-light); font-size: 0.8rem;">|</span>
+        <span style="color: var(--text-muted); font-size: 0.825rem;">
+          📍 Plaza 4-A, Union Living, Main Mohlanwal Rd, Chung, Lahore
+        </span>
+      </div>
+      <div class="top-contacts">
+        <a href="tel:+923215311883">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +92 321 5311883
+        </a>
+        <a href="https://wa.me/923215311883" target="_blank" style="color: #0D9488; font-weight: 600;">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-mark">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2v20M2 12h20"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title">Dr. Tariq</div>
+          <div class="brand-subtitle">Skin & Dental Center</div>
+        </div>
+      </a>
+
+      <!-- SPECIALTY SWITCHER -->
+      <div class="specialty-pill-toggle">
+        <button class="pill-btn active" onclick="filterSpecialty('all', this)">All Specialties</button>
+        <button class="pill-btn teal" onclick="filterSpecialty('derma', this)">✨ Dermatology</button>
+        <button class="pill-btn blue" onclick="filterSpecialty('dental', this)">🦷 Dental Surgery</button>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#results">Clinical Proof</a></li>
+          <li><a href="#estimator">Cost & Timelines</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#booking" class="btn btn-teal" style="padding: 9px 18px; font-size: 0.85rem;">Book Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span class="star-rating">★★★★★</span>
+          <span>4.8 / 5.0 Rating</span>
+          <span style="color: var(--text-light);">•</span>
+          <span style="color: var(--text-muted);">127+ Google Reviews</span>
+        </div>
+
+        <h1 class="hero-title">
+          Where Clinical Precision Meets <span class="highlight-teal serif-display">Aesthetic Artistry.</span>
+        </h1>
+
+        <p class="hero-description">
+          Lahore’s premier multidisciplinary medical sanctuary for evidence-based clinical dermatology, FDA-grade painless laser therapy, and advanced restorative dental surgery.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-teal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Schedule Consultation
+          </a>
+          <a href="https://wa.me/923215311883?text=Hello%20Dr.%20Tariq%20Skin%20and%20Dental%20Center,%20I%20would%20like%20to%20inquire%20about%20an%20appointment." target="_blank" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Direct WhatsApp Desk
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <h4>10,000+</h4>
+            <p>Procedures Performed</p>
+          </div>
+          <div class="metric-item">
+            <h4>PMC & UK</h4>
+            <p>Certified Specialists</p>
+          </div>
+          <div class="metric-item">
+            <h4>Class-B</h4>
+            <p>Hospital Sterilization</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO CARD -->
+      <div class="hero-interactive-card">
+        <span class="card-ribbon">Clinical Faculty</span>
+        <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Consultant Leadership</h3>
+        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 24px;">Direct oversight by senior professors and international credential holders.</p>
+
+        <div class="quick-faculty-list">
+          <div class="mini-doc-row">
+            <div class="mini-avatar">TR</div>
+            <div class="mini-doc-info">
+              <h5>Prof. Dr. Tariq Rashid</h5>
+              <p>MBBS, FCPS (Dermatology) • Chief Dermatologist</p>
+            </div>
+          </div>
+          <div class="mini-doc-row">
+            <div class="mini-avatar" style="background: linear-gradient(135deg, #0D9488, #14B8A6);">NT</div>
+            <div class="mini-doc-info">
+              <h5>Dr. Navaira Tariq</h5>
+              <p>BDS, Certified Aesthetic Physician • Laser & Aesthetics</p>
+            </div>
+          </div>
+          <div class="mini-doc-row">
+            <div class="mini-avatar" style="background: linear-gradient(135deg, #0284C7, #38BDF8);">SA</div>
+            <div class="mini-doc-info">
+              <h5>Dr. Saira Arshad</h5>
+              <p>BDS, MFDRCSI, MSc (UK) • Specialist Dentist</p>
+            </div>
+          </div>
+          <div class="mini-doc-row">
+            <div class="mini-avatar" style="background: linear-gradient(135deg, #334155, #64748B);">AB</div>
+            <div class="mini-doc-info">
+              <h5>Dr. Ali Abu Bakar</h5>
+              <p>BDS • Consultant Dental Surgeon</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-subtle); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
+          <span>📍 Chung, Mohlanwal Road, Lahore</span>
+          <a href="#location" style="color: var(--teal-primary); font-weight: 600;">View Map →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERHAULED CLINICAL PROOF & BEFORE / AFTER SECTION -->
+  <section id="results" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clinical Transformation Archive</span>
+        <h2 class="section-title">Verified Visual Transformations</h2>
+        <p class="section-subtitle">Real medical documentation. Drag the vertical divider horizontally to inspect dermatological clearings and cosmetic dental rehabilitation.</p>
+      </div>
+
+      <div class="ba-wrapper">
+        <!-- CASE NAVIGATION TABS -->
+        <div class="ba-cases-nav">
+          <button class="ba-case-tab active" onclick="switchBACase('case1', this)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24"/></svg>
+            Case 01: Melasma & Pigmentation Reversal (Dermatology)
+          </button>
+          <button class="ba-case-tab" onclick="switchBACase('case2', this)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4c0 3 2 5 2 8 0 3-1 6-1 8h6c0-2-1-5-1-8 0-3 2-5 2-8a4 4 0 0 0-4-4z"/></svg>
+            Case 02: Smile Alignment & Porcelain Veneers (Cosmetic Dental)
+          </button>
+        </div>
+
+        <!-- CANVAS STAGE -->
+        <div class="ba-interactive-canvas-container">
+          <div class="ba-stage" id="baStage">
+            <!-- AFTER IMAGE LAYER -->
+            <div class="ba-layer ba-layer-after" id="baAfterLayer"></div>
+            
+            <!-- BEFORE IMAGE LAYER -->
+            <div class="ba-layer ba-layer-before" id="baBeforeLayer">
+              <div class="ba-inner-before-img" id="baBeforeInner"></div>
+            </div>
+
+            <!-- FLOATING LABELS -->
+            <span class="ba-badge before">Baseline (Before)</span>
+            <span class="ba-badge after">Result (After)</span>
+
+            <!-- DRAGGABLE DIVIDER HANDLE -->
+            <div class="ba-handle" id="baHandle">
+              <div class="ba-handle-knob">◂ ▸</div>
+            </div>
+
+            <!-- RANGE INPUT FOR TOUCH & MOUSE -->
+            <input type="range" min="0" max="100" value="50" class="ba-range-input" id="baRangeInput" oninput="setBASlider(this.value)">
+          </div>
+        </div>
+
+        <!-- CASE METADATA FOOTER -->
+        <div class="ba-case-footer">
+          <div class="ba-meta-header">
+            <div class="ba-meta-title">
+              <h3 id="baCaseTitle">Case 104: Chronic Facial Melasma & Dermal Hyperpigmentation</h3>
+              <p id="baCaseDesc">Clinical diagnosis: Mixed epidermal-dermal melasma resistant to topical hydroquinone regimens.</p>
+            </div>
+            <a href="#booking" class="btn btn-teal" style="padding: 9px 20px; font-size: 0.85rem;" id="baBookBtn" onclick="setServiceInForm('Melasma & Pigmentation Reversal')">
+              Book This Protocol →
+            </a>
+          </div>
+
+          <div class="ba-metrics-strip">
+            <div class="ba-metric-pill">
+              <span>Supervising Physician</span>
+              <strong id="baDoctor">Prof. Dr. Tariq Rashid</strong>
+            </div>
+            <div class="ba-metric-pill">
+              <span>Protocol Applied</span>
+              <strong id="baProtocol">Combination Peel + Low-Fluence Laser</strong>
+            </div>
+            <div class="ba-metric-pill">
+              <span>Treatment Duration</span>
+              <strong id="baDuration">4 Sessions (3-week intervals)</strong>
+            </div>
+            <div class="ba-metric-pill">
+              <span>Clinical Recovery</span>
+              <strong id="baDowntime">Minimal Flaking (24-48 hrs)</strong>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-subtle); padding: 12px 18px; border-radius: var(--radius-sm); font-size: 0.775rem; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
+            <span>🛡️ Photographs documented under standardized clinical cross-polarized medical lighting. Patient consent on file.</span>
+            <span style="font-weight: 600; color: var(--teal-primary);">Dr. Tariq Skin & Dental Archives</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TREATMENT COST & TIMELINE ESTIMATOR -->
+  <section id="estimator" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Transparency & Planning</span>
+        <h2 class="section-title">Treatment Timelines & Procedure Details</h2>
+        <p class="section-subtitle">Select any clinical procedure to review recommended session schedules, expected recovery timelines, and preparation instructions.</p>
+      </div>
+
+      <div class="estimator-box">
+        <div class="estimator-grid">
+          <div class="estimator-controls">
+            <h4>Select Procedure:</h4>
+            
+            <button class="estimator-option-btn active" onclick="loadEstimator('laser', this)">
+              <strong>Painless Body Laser Hair Removal</strong>
+              <span>Triple-wavelength diode chilled-tip system</span>
+            </button>
+
+            <button class="estimator-option-btn" onclick="loadEstimator('hydra', this)">
+              <strong>Medical HydraFacial Elite</strong>
+              <span>Deep vortex extraction & hyaluronic saturation</span>
+            </button>
+
+            <button class="estimator-option-btn" onclick="loadEstimator('veneers', this)">
+              <strong>Zirconia Crowns & Porcelain Veneers</strong>
+              <span>Permanent aesthetic smile makeover</span>
+            </button>
+
+            <button class="estimator-option-btn" onclick="loadEstimator('rct', this)">
+              <strong>Single-Visit Painless Root Canal (RCT)</strong>
+              <span>Rotary endodontics with digital apex locator</span>
+            </button>
+
+            <button class="estimator-option-btn" onclick="loadEstimator('aligners', this)">
+              <strong>Invisible Clear Aligners</strong>
+              <span>Discreet orthodontic realignment</span>
+            </button>
+          </div>
+
+          <!-- DYNAMIC CARD -->
+          <div class="estimator-display-card">
+            <span class="service-badge teal" id="estBadge" style="margin-bottom: 12px; display: inline-block;">Dermatology Protocol</span>
+            <h3 id="estTitle">Painless Laser Hair Removal</h3>
+            <p id="estSummary" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;">
+              Medical diode cooling technology providing permanent reduction of unwanted hair with zero thermal discomfort.
+            </p>
+
+            <div class="spec-row">
+              <span style="color: var(--text-muted);">Recommended Schedule:</span>
+              <strong id="estSessions" style="color: var(--text-main);">6 to 8 Sessions</strong>
+            </div>
+            <div class="spec-row">
+              <span style="color: var(--text-muted);">Session Interval:</span>
+              <strong id="estInterval" style="color: var(--text-main);">4 – 6 Weeks</strong>
+            </div>
+            <div class="spec-row">
+              <span style="color: var(--text-muted);">Clinical Downtime:</span>
+              <strong id="estRecovery" style="color: var(--text-main);">Zero Downtime (Immediate return)</strong>
+            </div>
+            <div class="spec-row">
+              <span style="color: var(--text-muted);">Key Preparation:</span>
+              <strong id="estPrep" style="color: var(--text-main);">Shave area 24 hrs prior, avoid sun</strong>
+            </div>
+            <div class="spec-row" style="border-bottom: none; padding-top: 14px;">
+              <span style="color: var(--text-muted);">Supervising Doctor:</span>
+              <strong id="estDoc" style="color: var(--teal-primary);">Dr. Navaira Tariq</strong>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <a href="#booking" class="btn btn-teal" style="width: 100%;" id="estBookAction" onclick="prefillEstimatorService()">
+                Reserve Consultation for this Treatment →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TRIAGE / TREATMENT FINDER -->
+  <section id="triage" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Smart Self-Assessment</span>
+        <h2 class="section-title">Find Your Tailored Treatment</h2>
+        <p class="section-subtitle">Take this quick 30-second self-assessment to discover the optimal procedure, lead doctor, and expected session count for your goal.</p>
+      </div>
+
+      <div class="triage-box">
+        <div class="triage-steps-nav">
+          <div class="triage-step-indicator active">
+            <span class="step-num">1</span>
+            <span>Select Focus</span>
+          </div>
+          <span style="color: var(--border-subtle);">• • •</span>
+          <div class="triage-step-indicator" id="step2Indicator">
+            <span class="step-num">2</span>
+            <span>Identify Concern</span>
+          </div>
+          <span style="color: var(--border-subtle);">• • •</span>
+          <div class="triage-step-indicator" id="step3Indicator">
+            <span class="step-num">3</span>
+            <span>Recommendation</span>
+          </div>
+        </div>
+
+        <!-- STAGE 1 -->
+        <div id="triageStage1">
+          <p style="text-align: center; margin-bottom: 20px; font-weight: 600; color: var(--text-body);">What area would you like to address today?</p>
+          <div class="quiz-options-grid">
+            <div class="quiz-card" onclick="selectTriageCategory('laser')">
+              <div class="quiz-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+              </div>
+              <h4>Laser Hair Removal</h4>
+              <p>Painless body & facial reduction</p>
+            </div>
+            <div class="quiz-card" onclick="selectTriageCategory('skin')">
+              <div class="quiz-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6a6 6 0 0 0-6 6h12a6 6 0 0 0-6-6z"/></svg>
+              </div>
+              <h4>Skin & Complexion</h4>
+              <p>Acne, melasma, glow & anti-aging</p>
+            </div>
+            <div class="quiz-card" onclick="selectTriageCategory('smile')">
+              <div class="quiz-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <h4>Smile Makeover</h4>
+              <p>Veneers, crowns & aligners</p>
+            </div>
+            <div class="quiz-card" onclick="selectTriageCategory('dental_pain')">
+              <div class="quiz-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4>Restorative Dental</h4>
+              <p>Painless RCT & Dental Implants</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STAGE 2 -->
+        <div id="triageStage2" style="display: none;">
+          <p style="text-align: center; margin-bottom: 20px; font-weight: 600; color: var(--text-body);" id="stage2Prompt">Specify your exact concern:</p>
+          <div class="quiz-options-grid" id="stage2Options"></div>
+          <div style="text-align: center;">
+            <button class="btn btn-outline" onclick="resetTriage()" style="padding: 8px 16px; font-size: 0.8rem;">← Back</button>
+          </div>
+        </div>
+
+        <!-- STAGE 3 RESULT -->
+        <div id="triageStage3" class="triage-result-card">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+            <div>
+              <span class="service-badge teal" style="margin-bottom: 8px; display: inline-block;">Recommended Protocol</span>
+              <h3 id="resProtocolName" style="font-size: 1.45rem;">Triple-Wavelength Painless Diode Laser</h3>
+            </div>
+            <button class="btn btn-outline" onclick="resetTriage()" style="padding: 6px 12px; font-size: 0.775rem;">Reset</button>
+          </div>
+          <p id="resDescription" style="color: var(--text-body); margin-bottom: 20px; font-size: 0.95rem;"></p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 24px;">
+            <div style="background: #FFFFFF; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Supervising Specialist</span>
+              <strong id="resDoctor" style="font-size: 0.9rem; color: var(--text-main);">Dr. Navaira Tariq</strong>
+            </div>
+            <div style="background: #FFFFFF; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Session Expectation</span>
+              <strong id="resSessions" style="font-size: 0.9rem; color: var(--text-main);">6 - 8 Sessions</strong>
+            </div>
+            <div style="background: #FFFFFF; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Clinical Downtime</span>
+              <strong id="resDowntime" style="font-size: 0.9rem; color: var(--text-main);">Zero Downtime</strong>
+            </div>
+          </div>
+          <a href="#booking" id="resBookingBtn" class="btn btn-teal" onclick="prefillBookingService()">
+            Book This Protocol Now →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALTY SERVICES GRID -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clinical Procedures</span>
+        <h2 class="section-title">Comprehensive Clinical Portfolio</h2>
+        <p class="section-subtitle">Every procedure is performed in sterile operatory suites equipped with hospital-grade European and US equipment.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        
+        <!-- DERMA 1 -->
+        <div class="service-card" data-category="derma">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box teal">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <span class="service-badge teal">Dermatology</span>
+            </div>
+            <h3>Painless Laser Hair Removal</h3>
+            <p>Advanced chilled-tip triple wavelength diode laser providing permanent hair reduction across all Pakistani skin tones with zero burn risk.</p>
+          </div>
+          <div>
+            <div class="service-meta-specs">
+              <div><span>Target:</span> <strong>Full Body / Face</strong></div>
+              <div><span>Sessions:</span> <strong>6 - 8 Cycles</strong></div>
+              <div><span>Lead:</span> <strong>Dr. Navaira Tariq</strong></div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="setServiceInForm('Laser Hair Removal')">Book Assessment</a>
+          </div>
+        </div>
+
+        <!-- DERMA 2 -->
+        <div class="service-card" data-category="derma">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box teal">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+              <span class="service-badge teal">Aesthetics</span>
+            </div>
+            <h3>Medical HydraFacial Elite</h3>
+            <p>Multi-step clinical vortex infusion that cleanses, exfoliates, extracts comedones, and saturates deep dermis with customized antioxidant peptides.</p>
+          </div>
+          <div>
+            <div class="service-meta-specs">
+              <div><span>Duration:</span> <strong>45 Minutes</strong></div>
+              <div><span>Result:</span> <strong>Immediate Radiance</strong></div>
+              <div><span>Lead:</span> <strong>Aesthetic Team</strong></div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="setServiceInForm('HydraFacial')">Book Assessment</a>
+          </div>
+        </div>
+
+        <!-- DERMA 3 -->
+        <div class="service-card" data-category="derma">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box teal">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <span class="service-badge teal">Clinical Derma</span>
+            </div>
+            <h3>Acne, Melasma & Scar Revision</h3>
+            <p>Prof. Dr. Tariq Rashid’s specialized clinical protocols utilizing targeted chemical peels, subcision, microneedling, and prescription regimens.</p>
+          </div>
+          <div>
+            <div class="service-meta-specs">
+              <div><span>Category:</span> <strong>Clinical Disease</strong></div>
+              <div><span>Approach:</span> <strong>Root-Cause Therapy</strong></div>
+              <div><span>Lead:</span> <strong>Prof. Dr. Tariq Rashid</strong></div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="setServiceInForm('Clinical Dermatology')">Book Assessment</a>
+          </div>
+        </div>
+
+        <!-- DENTAL 1 -->
+        <div class="service-card" data-category="dental">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4c0 3 2 5 2 8 0 3-1 6-1 8h6c0-2-1-5-1-8 0-3 2-5 2-8a4 4 0 0 0-4-4z"/></svg>
+              </div>
+              <span class="service-badge blue">Cosmetic Dental</span>
+            </div>
+            <h3>Zirconia Crowns & Porcelain Veneers</h3>
+            <p>Custom-milled high-translucency Zirconia and E-Max ceramic veneers to correct discoloration, chipped teeth, and smile asymmetry.</p>
+          </div>
+          <div>
+            <div class="service-meta-specs">
+              <div><span>Material:</span> <strong>100% Biocompatible</strong></div>
+              <div><span>Longevity:</span> <strong>15+ Years</strong></div>
+              <div><span>Lead:</span> <strong>Dr. Saira Arshad</strong></div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="setServiceInForm('Zirconia & Veneers')">Book Assessment</a>
+          </div>
+        </div>
+
+        <!-- DENTAL 2 -->
+        <div class="service-card" data-category="dental">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <span class="service-badge blue">Orthodontics</span>
+            </div>
+            <h3>Invisible Clear Aligners & Braces</h3>
+            <p>Digitally mapped orthodontic alignment without visible wires. Also providing ceramic and low-friction metal braces for complex occlusion.</p>
+          </div>
+          <div>
+            <div class="service-meta-specs">
+              <div><span>Comfort:</span> <strong>Removable & Discreet</strong></div>
+              <div><span>Planning:</span> <strong>Digital 3D CAD</strong></div>
+              <div><span>Lead:</span> <strong>Dr. Saira Arshad</strong></div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="setServiceInForm('Clear Aligners')">Book Assessment</a>
+          </div>
+        </div>
+
+        <!-- DENTAL 3 -->
+        <div class="service-card" data-category="dental">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="service-badge blue">Oral Surgery</span>
+            </div>
+            <h3>Painless RCT & Dental Implants</h3>
+            <p>Single-visit rotary endodontics (Root Canal) performed under precision local anesthesia, and titanium dental implants for permanent tooth replacement.</p>
+          </div>
+          <div>
+            <div class="service-meta-specs">
+              <div><span>Pain Level:</span> <strong>Virtually Zero</strong></div>
+              <div><span>Tech:</span> <strong>Apex Locator</strong></div>
+              <div><span>Lead:</span> <strong>Dr. Ali Abu Bakar</strong></div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="setServiceInForm('RCT & Implants')">Book Assessment</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDICAL FACULTY / DOCTORS -->
+  <section id="faculty" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clinical Leadership</span>
+        <h2 class="section-title">Meet Our Medical Specialists</h2>
+        <p class="section-subtitle">Distinguished university professors, UK postgraduates, and certified aesthetic clinicians.</p>
+      </div>
+
+      <div class="faculty-grid">
+        <div class="doctor-card">
+          <div class="doc-portrait">TR</div>
+          <h3>Prof. Dr. Tariq Rashid</h3>
+          <div class="doc-credentials">MBBS, FCPS (Dermatology)</div>
+          <p class="doc-description">Chief Consultant Dermatologist with decades of university clinical professorship. Authority on complex skin disorders, hair diseases, and chronic dermatoses.</p>
+          <div class="doc-schedule-badge">Consultation: Mon & Wed</div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doc-portrait" style="background: linear-gradient(135deg, #0D9488, #14B8A6);">NT</div>
+          <h3>Dr. Navaira Tariq</h3>
+          <div class="doc-credentials">BDS, Certified Aesthetic Physician</div>
+          <p class="doc-description">Specializing in non-invasive facial rejuvenation, diode laser body contouring, PRP scalp regeneration, and clinical aesthetic dermatology with 5+ years of verified clinical experience.</p>
+          <div class="doc-schedule-badge">Consultation: Mon - Fri, Sun</div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doc-portrait" style="background: linear-gradient(135deg, #0284C7, #38BDF8);">SA</div>
+          <h3>Dr. Saira Arshad</h3>
+          <div class="doc-credentials">BDS, MFDRCSI, MSc (UK)</div>
+          <p class="doc-description">Specialist Dental Surgeon with Royal College credentials. Expertise encompasses smile designing, Zirconia prosthetics, clear aligner orthodontics, and painless root canals.</p>
+          <div class="doc-schedule-badge">Consultation: 12 PM - 8 PM</div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doc-portrait" style="background: linear-gradient(135deg, #334155, #64748B);">AB</div>
+          <h3>Dr. Ali Abu Bakar</h3>
+          <div class="doc-credentials">BDS, Oral Surgery Specialist</div>
+          <p class="doc-description">Consultant Dental Surgeon concentrating on surgical dental implants, complex impacted third molar extractions, and trauma rehabilitation.</p>
+          <div class="doc-schedule-badge">Consultation: By Appointment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Patient Experiences</span>
+        <h2 class="section-title">Endorsed by Over 127 Verified Patients</h2>
+        <p class="section-subtitle">Real feedback from patients treated at our Chung Mohlanwal Center.</p>
+      </div>
+
+      <div class="reviews-container">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "I had a great experience with Dr. Navaira Tariq. The services were excellent, and I'm really happy with the results of my body laser treatment. The staff was professional and cooperative, and the overall experience was very comfortable. Highly recommended!"
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">FH</div>
+            <div class="reviewer-details">
+              <h5>Fatimah Hanif</h5>
+              <span>Verified Google Patient • 1 month ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "Highly recommend Dr. Tariq and his team for skin treatment. I am going to them for 3 months now and he is always helpful, listens carefully, and gives honest medical opinions without unnecessary tests."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">HU</div>
+            <div class="reviewer-details">
+              <h5>Hajra Usman</h5>
+              <span>Verified Google Patient • 4 months ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "I recently received treatment at Dr. Tariq Skin and Dental Centre, and I am thoroughly satisfied with the quality of their services. Dr. Naveera is highly professional, compassionate, and attentive, providing clear guidance."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">SR</div>
+            <div class="reviewer-details">
+              <h5>Saima Rana</h5>
+              <span>Verified Google Patient • 4 months ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT BOOKING ENGINE -->
+  <section id="booking" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct Scheduling</span>
+        <h2 class="section-title">Schedule a Private Appointment</h2>
+        <p class="section-subtitle">Seamless 3-step digital reservation. Receive an instant booking confirmation via WhatsApp along with a downloadable Calendar invite.</p>
+      </div>
+
+      <div class="booking-wrapper">
+        <div class="booking-progress">
+          <div class="step-track"></div>
+          <div class="step-node active" id="node1">
+            <div class="node-circle">1</div>
+            <span class="node-label">Specialty</span>
+          </div>
+          <div class="step-node" id="node2">
+            <div class="node-circle">2</div>
+            <span class="node-label">Date & Time</span>
+          </div>
+          <div class="step-node" id="node3">
+            <div class="node-circle">3</div>
+            <span class="node-label">Patient Details</span>
+          </div>
+        </div>
+
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+          <!-- STEP 1 -->
+          <div id="bookingStep1">
+            <div class="form-group">
+              <label for="bookSpecialty">Select Department</label>
+              <select id="bookSpecialty" class="form-control" onchange="updateDoctorDropdown(this.value)" required>
+                <option value="">-- Choose Speciality --</option>
+                <option value="dermatology">Dermatology & Aesthetic Medicine</option>
+                <option value="dental">Dental Surgery & Orthodontics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bookDoctor">Select Preferred Doctor</label>
+              <select id="bookDoctor" class="form-control" required>
+                <option value="">-- First Select Department Above --</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bookTreatment">Primary Concern / Service Required</label>
+              <input type="text" id="bookTreatment" class="form-control" placeholder="e.g. Laser Hair Removal, Melasma, Zirconia Crown, RCT" required>
+            </div>
+
+            <div style="text-align: right; margin-top: 28px;">
+              <button type="button" class="btn btn-teal" onclick="goToStep(2)">Proceed to Schedule →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div id="bookingStep2" style="display: none;">
+            <div class="form-group">
+              <label for="bookDate">Select Date (Closed on Saturdays)</label>
+              <input type="date" id="bookDate" class="form-control" required onchange="validateBookingDate(this)">
+              <small id="dateHelp" style="color: var(--text-muted); font-size: 0.775rem;">Timings: 12:00 PM to 8:00 PM (Sun - Fri)</small>
+            </div>
+
+            <div class="form-group">
+              <label>Select Preferred Time Window</label>
+              <div class="slots-grid" id="slotsGrid">
+                <div class="slot-pill" onclick="selectSlot('12:00 PM - 01:00 PM', this)">12:00 PM</div>
+                <div class="slot-pill" onclick="selectSlot('01:30 PM - 02:30 PM', this)">01:30 PM</div>
+                <div class="slot-pill" onclick="selectSlot('03:00 PM - 04:00 PM', this)">03:00 PM</div>
+                <div class="slot-pill" onclick="selectSlot('04:30 PM - 05:30 PM', this)">04:30 PM</div>
+                <div class="slot-pill" onclick="selectSlot('06:00 PM - 07:00 PM', this)">06:00 PM</div>
+                <div class="slot-pill" onclick="selectSlot('07:00 PM - 08:00 PM', this)">07:00 PM</div>
+              </div>
+              <input type="hidden" id="selectedTimeSlot" required>
+            </div>
+
+            <div class="booking-actions-row">
+              <button type="button" class="btn btn-outline" onclick="goToStep(1)">← Back</button>
+              <button type="button" class="btn btn-teal" onclick="goToStep(3)">Patient Info →</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div id="bookingStep3" style="display: none;">
+            <div class="form-group">
+              <label for="patientName">Patient Full Name</label>
+              <input type="text" id="patientName" class="form-control" placeholder="e.g. Ayesha Khan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="patientPhone">Mobile Number (WhatsApp Enabled)</label>
+              <input type="tel" id="patientPhone" class="form-control" placeholder="0321 1234567" pattern="[0-9+ -]{10,15}" required>
+            </div>
+
+            <div class="form-group">
+              <label for="patientNotes">Clinical Notes or Pre-existing Conditions (Optional)</label>
+              <textarea id="patientNotes" rows="3" class="form-control" placeholder="Mention any past allergic reactions, medications, or specific requests..."></textarea>
+            </div>
+
+            <div class="booking-actions-row">
+              <button type="button" class="btn btn-outline" onclick="goToStep(2)">← Back</button>
+              <button type="submit" class="btn btn-primary" style="padding: 12px 28px;">Confirm & Book Appointment</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT MAP -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="location-card-grid">
+        <div class="location-info-pane">
+          <span class="section-tag">Convenient Accessibility</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Our Location in Lahore</h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">Located conveniently on Main Mohlanwal Road, Chung, with dedicated patient parking and first-floor elevator access.</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="font-size: 1.2rem;">🏢</span>
+              <div>
+                <strong style="color: var(--text-main);">Address:</strong>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Plaza 4-A, First Floor, Union Living, Main Mohlanwal Road, Chung, Lahore, Pakistan</p>
+                <code style="font-size: 0.775rem; background: var(--bg-subtle); padding: 2px 6px; border-radius: 4px;">Plus Code: C58F+R6 Lahore</code>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="font-size: 1.2rem;">🕒</span>
+              <div>
+                <strong style="color: var(--text-main);">Operating Hours:</strong>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Monday – Friday: 12:00 PM – 08:00 PM<br>Sunday: 12:00 PM – 08:00 PM<br><span style="color: #DC2626; font-weight: 600;">Saturday: Closed</span></p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="font-size: 1.2rem;">📞</span>
+              <div>
+                <strong style="color: var(--text-main);">Telephone / WhatsApp:</strong>
+                <p style="font-size: 0.9rem;"><a href="tel:+923215311883" style="color: var(--teal-primary); font-weight: 700;">+92 321 5311883</a></p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com/?q=Dr.+Tariq+Skin+and+Dental+Center+Lahore" target="_blank" class="btn btn-teal">
+            Open in Google Maps ↗
+          </a>
+        </div>
+
+        <div class="map-preview-pane">
+          <div style="text-align: center; padding: 24px;">
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; box-shadow: var(--shadow-sm); color: #DC2626; font-size: 1.5rem;">
+              📍
+            </div>
+            <h4 style="color: var(--text-main); margin-bottom: 6px;">Union Living Commercial Plaza</h4>
+            <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 18px;">Main Mohlanwal Road, Chung, Lahore</p>
+            <a href="https://maps.google.com/?q=Dr.+Tariq+Skin+and+Dental+Center+Lahore" target="_blank" class="btn btn-outline" style="background: white;">
+              Launch GPS Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Dr. Tariq Skin & Dental Center</h4>
+          <p style="line-height: 1.7; margin-bottom: 20px;">
+            Setting the benchmark for dermatological and dental excellence in Lahore. Combining senior professorial diagnosis with cutting-edge non-invasive aesthetics.
+          </p>
+          <p style="font-size: 0.8rem; color: #64748B;">Registered with PMC & Healthcare Authorities.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Dermatology</h5>
+          <ul>
+            <li><a href="#services">Body Laser Hair Removal</a></li>
+            <li><a href="#services">HydraFacial Elite</a></li>
+            <li><a href="#services">Acne & Melasma Therapy</a></li>
+            <li><a href="#services">PRP Hair Regeneration</a></li>
+            <li><a href="#services">Chemical Peeling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Dental Surgery</h5>
+          <ul>
+            <li><a href="#services">Zirconia Crowns</a></li>
+            <li><a href="#services">Porcelain Veneers</a></li>
+            <li><a href="#services">Invisible Clear Aligners</a></li>
+            <li><a href="#services">Single-Visit Painless RCT</a></li>
+            <li><a href="#services">Dental Implants</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Patient Desk</h5>
+          <ul>
+            <li><a href="#booking">Book Appointment</a></li>
+            <li><a href="#faculty">Meet the Faculty</a></li>
+            <li><a href="#results">Clinical Proof</a></li>
+            <li><a href="#reviews">Google Reviews (4.8★)</a></li>
+            <li><a href="tel:+923215311883">Emergency Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Dr. Tariq Skin and Dental Center. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 24px;">
+          <span>Privacy Policy</span>
+          <span>Terms of Clinical Care</span>
+          <span>Medical Ethics Compliance</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="confirmModal">
+    <div class="modal-card">
+      <div class="success-icon-circle">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 style="font-size: 1.45rem; margin-bottom: 8px;">Appointment Reserved!</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">
+        Your provisional slot has been scheduled. Please click below to send a 1-click confirmation to our clinical coordinator on WhatsApp, or download your calendar reminder.
+      </p>
+
+      <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-sm); text-align: left; margin-bottom: 24px; font-size: 0.85rem;" id="modalSummaryBox"></div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a id="modalWhatsAppLink" href="#" target="_blank" class="btn btn-teal" style="width: 100%;">
+          Confirm via WhatsApp Desk 💬
+        </a>
+        <button id="modalIcsBtn" class="btn btn-outline" style="width: 100%;" onclick="downloadCalendarInvite()">
+          📅 Add to Phone Calendar (.ics)
+        </button>
+        <button class="btn" style="background: transparent; color: var(--text-muted); font-size: 0.8rem;" onclick="closeModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
